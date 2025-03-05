@@ -9,9 +9,21 @@
 </head>
 <body>
     <h1>Le jeu des Allumettes</h1>
-    <h2>Il vous reste 50 allumettes</h2>
-    <label for="nombreAllumettes">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et 6)</label>
-    <input type="number" name="choixJoueur" id="inputJoueur" class="inputJoueur" min="1" max="monMax">
-    <button>Valider</button>
+    <p id="regles">Le but du jeu est de vider le tas d'allumettes. Le joueur qui prend la dernière gagne !</p>
+    <hr>
+    <h2>Il y a 50 allumettes dans le tas</h2>
+    <hr>
+    <p> Joueur 1 <br>
+        <label for="nombreAllumettes" class="joueur1">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et 6)</label><br>
+        <input type="number" name="choixJoueur" id="inputJoueur1" class="input" min="1" max="monMax">
+        <button class="joueur1" id="boutonJoueur1">Valider</button>
+    </p>
+    <br>
+    <p> Joueur 2 <br>
+        <label for="nombreAllumettes" class="joueur2">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et 6)</label><br>
+        <input type="number" name="choixJoueur" id="inputJoueur2" class="input" min="1" max="monMax">
+        <button id="boutonJoueur2" class="joueur2">Valider</button>
+    </p>
+
 </body>
 </html>
