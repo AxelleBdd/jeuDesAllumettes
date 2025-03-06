@@ -5,12 +5,12 @@ let allumettesAEnlever;
 const affichage = document.querySelector("h2");// permet de sélectioner la phrase dans les balises h2
 const entreeJoueur1 = document.querySelector("#inputJoueur1"); // permet de séléctionner l'input du joueur 1
 const entreeJoueur2 = document.querySelector("#inputJoueur2"); // permet de séléctionner l'input du joueur 2
+const entreeJoueur3 = document.querySelector("#inputJoueur3"); // permet de séléctionner l'input du joueur 3
+const entreeJoueur4 = document.querySelector("#inputJoueur4"); // permet de séléctionner l'input du joueur 4
 const clickJoueur1 = document.querySelector("#boutonJoueur1"); // bouton valider du joueur 1
 const clickJoueur2 = document.querySelector("#boutonJoueur2"); // bouton valider du joueur 2
-
-// Assignation du max des l'input
-let inputMax = document.querySelector("input");
-inputMax.setAttribute("max",6);
+const clickJoueur3 = document.querySelector("#boutonJoueur3"); // bouton valider du joueur 3
+const clickJoueur4 = document.querySelector("#boutonJoueur4"); // bouton valider du joueur 4
 
 // DECLARATION DES FONCTIONS
 
@@ -26,13 +26,22 @@ function jeuDesAllumettes(numeroJoueur) {
 }
 // Fonction pour choisir le joueur actif
 function choixDuJoueurAcif(joueur){
-    if(joueur == 1){
-        let allumettes = entreeJoueur1.value;
-        return allumettes;
-    } else if (joueur ==2){
-        let allumettes = entreeJoueur2.value;
-        return allumettes;
-    }
+let allumettes;
+    switch (joueur) {
+        case joueur = 1:
+            allumettes = entreeJoueur1.value;
+        break;
+        case joueur = 2:
+            allumettes = entreeJoueur2.value;
+        break;
+        case joueur = 3:
+            allumettes = entreeJoueur3.value;
+        break;
+        case joueur = 4:
+            allumettes = entreeJoueur4.value;
+        break;
+    } 
+    return allumettes;
 }
 // Fonction qui permet de récupérer l'entrée de l'utilisateur
 function choisirNombreAllumettesAEnlever(allumettes) {
@@ -68,13 +77,47 @@ clickJoueur1.addEventListener("click", () => {
     entreeJoueur1.disabled = true;
     clickJoueur2.disabled = false;
     entreeJoueur2.disabled = false;
+    clickJoueur3.disabled = true;
+    entreeJoueur3.disabled = true;
+    clickJoueur4.disabled = true;
+    entreeJoueur4.disabled = true;
 })
 
 // Lorsque c'est le joueur 2 qui joue
 clickJoueur2.addEventListener("click", () => {
     jeuDesAllumettes(2);
+    clickJoueur1.disabled = true;
+    entreeJoueur1.disabled = true;
+    clickJoueur2.disabled = true;
+    entreeJoueur2.disabled = true;
+    clickJoueur3.disabled = false;
+    entreeJoueur3.disabled = false;
+    clickJoueur4.disabled = true;
+    entreeJoueur4.disabled = true;
+})
+
+// Lorsque c'est le joueur 3 qui joue
+clickJoueur3.addEventListener("click", () => {
+    jeuDesAllumettes(3);
+    clickJoueur1.disabled = true;
+    entreeJoueur1.disabled = true;
+    clickJoueur2.disabled = true;
+    entreeJoueur2.disabled = true;
+    clickJoueur3.disabled = true;
+    entreeJoueur3.disabled = true;
+    clickJoueur4.disabled = false;
+    entreeJoueur4.disabled = false;
+})
+
+// Lorsque c'est le joueur 4 qui joue
+clickJoueur4.addEventListener("click", () => {
+    jeuDesAllumettes(4);
     clickJoueur1.disabled = false;
     entreeJoueur1.disabled = false;
     clickJoueur2.disabled = true;
     entreeJoueur2.disabled = true;
+    clickJoueur3.disabled = true;
+    entreeJoueur3.disabled = true;
+    clickJoueur4.disabled = true;
+    entreeJoueur4.disabled = true;
 })
