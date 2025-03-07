@@ -39,6 +39,7 @@ h1, h2, h3 {
 .selectionJoueur {
   margin-top: 2%;
   font-family: "Quantico", sans-serif;
+  text-align: center;
 }
 /* Mise en page de l'affichage des divs des joueurs */
 .joueur {
