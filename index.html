@@ -14,11 +14,11 @@
 
 <body>
     <h1>Le jeu des Allumettes</h1>
-    <p id="regles">Le but du jeu est de vider le tas d'allumettes. Le joueur qui prend la dernière gagne !</p>
+    <h3 id="regles">Le but du jeu est de vider le tas d'allumettes. Le joueur qui prend la dernière gagne !</h3>
     <hr>
-    <h2>Il y a 50 allumettes dans le tas</h2>
+    <h2></h2>
     <hr>
-    <select name="joueur" id="selectionJoueur">
+    <select name="joueur" id="selectionJoueur" class="selectionJoueur">
         <!-- les attributs selected, disabled et hidden, permettent de mettre cette option par défaut, et cacaher son apparition dans la iste déroulante -->
         <option value="" selected disabled hidden>--Choisir un nombre de joueurs--</option>
         <option value="1">1 joueur</option>
@@ -26,9 +26,10 @@
         <option value="3">3 joueurs</option>
         <option value="4">4 joueurs</option>
     </select>
-    <div>
+    <div id="joueurContainer" class="joueurContainer">
         
     </div>
+    <button id="boutonRejouer" class="boutonRejouer">Rejouer</button>
 
 </body>
 </html>

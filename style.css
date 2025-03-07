@@ -1,3 +1,4 @@
+/* Gestion de la police */
 .quantico-regular {
   font-family: "Quantico", sans-serif;
   font-weight: 400;
@@ -21,27 +22,57 @@
   font-weight: 700;
   font-style: italic;
 }
-
-
+/* Mise en page des blocs */
 body {
-    font-family: "Quantico", sans-serif;
-    background-color: #f8efe5;
+  font-family: "Quantico", sans-serif;
+  text-align: center;
+  background-image: url("oscar-dario-wkxHVBGytYY-unsplash.jpg");
+  background-size: cover;
+  background-position: center; 
 }
 
-h1, h2{
-    text-align: center;
+h1, h2, h3 {
+  text-align: center;
+  background-color: #f8efe59d;
+}
+/* Mise en page de la partie selection d'un joueur */
+.selectionJoueur {
+  margin-top: 2%;
+  font-family: "Quantico", sans-serif;
+}
+/* Mise en page de l'affichage des divs des joueurs */
+.joueur {
+  display: inline-flex;
+  border: solid;
+  border-radius: 1.5em;
+  padding: 1.5em;
+  margin-left: 7%;
+  background-color: #f8efe59d;
+  font-family: "Quantico", sans-serif;
+}
+/* Mise en page de tous les joueurs */
+.joueur label {
+  padding-right: 1em;
+  font-family: "Quantico", sans-serif;
 }
 
-.joueur{
-    float: inline-start;
-    text-align: center;
-    border: solid;
-    border-radius: 1.5em;
-    padding: 1.5em;
-    margin-left: 7%;
-    background-color: #f8efe5;
+.joueur input {
+  font-family: "Quantico", sans-serif;
 }
 
-.inputJoueur:hover{
+ .joueur button {
+  font-family: "Quantico", sans-serif;
+ }
+ /* Mise en page du bloc contanant tous les joueurs */
+.joueurContainer {
+  padding-top: 3%;
+  font-family: "Quantico", sans-serif;
+}
+/* Changement du cursor lors du surval des inputJoueur */
+.inputJoueur:hover {
   cursor: default;
+}
+ /* Mise en page du bouton rejouer */
+.boutonRejouer {
+  margin-top: 2%;
 }
