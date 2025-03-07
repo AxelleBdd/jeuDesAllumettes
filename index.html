@@ -18,34 +18,17 @@
     <hr>
     <h2>Il y a 50 allumettes dans le tas</h2>
     <hr>
-    <p class="joueur" id="joueur1"> Joueur 1 <br>
-        <label for="nombreAllumettes">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et
-            6)</label><br>
-        <input type="number" name="choixJoueur" id="inputJoueur1" class="input" onfocus="this.value=''" min="1"
-            max="6">
-        <button id="boutonJoueur1">Valider</button>
-    </p>
-    <p class="joueur" id="joueur2"> Joueur 2 <br>
-        <label for="nombreAllumettes">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et
-            6)</label><br>
-        <input type="number" name="choixJoueur" id="inputJoueur2" class="input" onfocus="this.value=''" min="1"
-            max="6">
-        <button id="boutonJoueur2">Valider</button>
-    </p>
-    <p class="joueur" id="joueur3"> Joueur 3 <br>
-        <label for="nombreAllumettes">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et
-            6)</label><br>
-        <input type="number" name="choixJoueur" id="inputJoueur3" class="input" onfocus="this.value=''" min="1"
-            max="6">
-        <button id="boutonJoueur3">Valider</button>
-    </p>
-    <p class="joueur" id="joueur4"> Joueur 4 <br>
-        <label for="nombreAllumettes">Combien d'allumettes souhaitez-vous retirer ? (entre 1 et
-            6)</label><br>
-        <input type="number" name="choixJoueur" id="inputJoueur4" class="input" onfocus="this.value=''" min="1"
-            max="6">
-        <button id="boutonJoueur4">Valider</button>
-    </p>
+    <select name="joueur" id="selectionJoueur">
+        <!-- les attributs selected, disabled et hidden, permettent de mettre cette option par défaut, et cacaher son apparition dans la iste déroulante -->
+        <option value="" selected disabled hidden>--Choisir un nombre de joueurs--</option>
+        <option value="1">1 joueur</option>
+        <option value="2">2 joueurs</option>
+        <option value="3">3 joueurs</option>
+        <option value="4">4 joueurs</option>
+    </select>
+    <div>
+        
+    </div>
 
 </body>
 </html>

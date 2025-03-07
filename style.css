@@ -41,3 +41,7 @@ h1, h2{
     margin-left: 7%;
     background-color: #f8efe5;
 }
+
+.inputJoueur:hover{
+  cursor: default;
+}
